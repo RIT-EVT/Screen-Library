@@ -11,12 +11,14 @@ project(SCREENLIBRARY
         )
 
 add_library(${PROJECT_NAME} STATIC
-        include/Box.hpp
-        )
+        include/shapes/Rectangle.hpp
+        include/Color.hpp
+        include/DisplayDriver.hpp
+)
 
 target_sources(${PROJECT_NAME} PRIVATE
-        src/Box.cpp
-        )
+        src/shapes/Rectangle.cpp
+)
 
 #add_subdirectory(src)
 
