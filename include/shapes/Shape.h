@@ -10,6 +10,7 @@
 #include <cstdint>
 
 namespace ScreenLibrary {
+template<class Color>
 class Shape {
 public:
     virtual ~Shape() = default;
@@ -26,13 +27,13 @@ public:
     virtual uint16_t getHeight() = 0;
     virtual void setHeight(uint16_t height) = 0;
 
-    virtual RGBA getFill() = 0;
-    virtual void setFill(RGBA color) = 0;
+    virtual Color getFill() = 0;
+    virtual void setFill(Color color) = 0;
 
-    virtual RGBA getStroke() = 0;
-    virtual void setStroke(RGBA color) = 0;
+    virtual Color getStroke() = 0;
+    virtual void setStroke(Color color) = 0;
 
-    virtual void draw(Driver::DisplayDriver &display) = 0;
+    virtual void draw(Driver::DisplayDriver<Color> &display) = 0;
 };
 }
 #endif // HUDLV2_SHAPE_H

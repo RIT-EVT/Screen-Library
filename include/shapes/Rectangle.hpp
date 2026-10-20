@@ -4,7 +4,8 @@
 #include <Color.hpp>
 
 namespace ScreenLibrary {
-    class Rectangle: Shape {
+    template<class Color>
+    class Rectangle: Shape<Color> {
     public:
         uint16_t getX() override;
         void setX(uint16_t x) override;
@@ -18,15 +19,15 @@ namespace ScreenLibrary {
         uint16_t getHeight() override;
         void setHeight(uint16_t height) override;
 
-        RGBA getFill() override;
-        void setFill(RGBA color) override;
+        Color getFill() override;
+        void setFill(Color color) override;
 
-        RGBA getStroke() override;
-        void setStroke(RGBA color) override;
+        Color getStroke() override;
+        void setStroke(Color color) override;
 
-        explicit Rectangle(int x, int y, int width, int height, RGBA fill, RGBA stroke);
+        explicit Rectangle(int x, int y, int width, int height, Color fill, Color stroke);
 
-        void draw(Driver::DisplayDriver& display) override;
+        void draw(Driver::DisplayDriver<Color>& display) override;
     private:
         int x;
         int y;
@@ -34,8 +35,8 @@ namespace ScreenLibrary {
         int width;
         int height;
 
-        RGBA fill;
-        RGBA stroke;
+        Color fill;
+        Color stroke;
     };
 }
 #endif
