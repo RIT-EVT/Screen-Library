@@ -2,14 +2,19 @@
 #define _EVT_RGBA_HPP_
 #include <cstdint>
 
-// TODO: This color needs to be scalable to different sizes.
 namespace ScreenLibrary {
-typedef struct __packed {
+typedef struct __attribute__((packed)) {
     uint8_t red;
     uint8_t green;
     uint8_t blue;
     uint8_t alpha;
-}  RGBA_24;
+} RGBA_32;
+
+typedef struct __attribute__((packed)) {
+    uint8_t red;
+    uint8_t green;
+    uint8_t blue;
+} RGB_24;
 
 typedef union __attribute__((packed)) {
     uint16_t value;
