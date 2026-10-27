@@ -32,9 +32,8 @@ public:
 class BacklightDriver {
 public:
     virtual ~BacklightDriver() = default;
-
-private:
     virtual void enableBacklight() = 0;
+    virtual void disableBacklight() = 0;
 };
 } // namespace Screen::Driver
 #endif // DISPLAY_DRIVER_SHAPE_HPP
