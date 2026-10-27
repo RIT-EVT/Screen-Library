@@ -21,7 +21,7 @@ public:
 };
 
 template<class Color>
-class BufferedDisplayDriver : DisplayDriver<Color> {
+class BufferedDisplayDriver : public DisplayDriver<Color> {
 public:
     /**
      * Flush the current buffer to the actual display. Internally should interface with a ``Display
