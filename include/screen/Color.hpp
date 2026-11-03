@@ -1,5 +1,5 @@
-#ifndef _EVT_RGBA_HPP_
-#define _EVT_RGBA_HPP_
+#ifndef _EVT_COLOR_HPP_
+#define _EVT_COLOR_HPP_
 #include <cstdint>
 
 namespace ScreenLibrary {

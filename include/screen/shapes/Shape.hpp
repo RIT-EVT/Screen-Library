@@ -1,11 +1,7 @@
-//
-// Created by Taylor Lineman on 9/26/26.
-//
-
-#ifndef SCREEN_SHAPE_HPP
-#define SCREEN_SHAPE_HPP
-#include <Color.hpp>
-#include <DisplayDriver.hpp>
+#ifndef _EVT_SCREEN_SHAPE_HPP_
+#define _EVT_SCREEN_SHAPE_HPP_
+#include <screen/Color.hpp>
+#include <screen/DisplayDriver.hpp>
 
 #include <cstdint>
 

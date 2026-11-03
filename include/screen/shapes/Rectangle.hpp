@@ -1,7 +1,6 @@
-#ifndef BOX_RGBA_HPP
-#define BOX_RGBA_HPP
-#include <shapes/Shape.h>
-#include <Color.hpp>
+#ifndef _EVT_BOX_RGBA_HPP_
+#define _EVT_BOX_RGBA_HPP_
+#include <screen/shapes/Shape.hpp>
 
 namespace ScreenLibrary {
     template<class Color>
@@ -40,3 +39,5 @@ namespace ScreenLibrary {
     };
 }
 #endif
+
+#include "template/shapes/Rectangle.tpp"

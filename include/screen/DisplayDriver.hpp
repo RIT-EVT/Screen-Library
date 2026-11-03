@@ -1,7 +1,6 @@
 #ifndef DISPLAY_DRIVER_SHAPE_HPP
 #define DISPLAY_DRIVER_SHAPE_HPP
 
-#include <Color.hpp>
 #include <cstdint>
 
 namespace ScreenLibrary::Driver {

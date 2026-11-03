@@ -1,5 +1,8 @@
-#include <shapes/Rectangle.hpp>
+#ifndef _EVT_RECTANLGE_TPP_
+#define _EVT_RECTANLGE_TPP_
 
+#include <screen/DisplayDriver.hpp>
+#include <screen/shapes/Rectangle.hpp>
 
 namespace ScreenLibrary {
 
@@ -72,3 +75,5 @@ void Rectangle<Color>::draw(Driver::DisplayDriver<Color>& display) {
     display.fillRect(fill, x, y, width, height);
 }
 } // namespace ScreenLibrary
+
+#endif
